@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Najma Chaudhary | Full-Stack Web Developer</title>
+    <meta name="description" content="Najma Chaudhary – Full-Stack Web Developer (MERN & Go). Portfolio of projects, skills and experience.">
+    <meta name="theme-color" content="#120b0f">
+    <meta property="og:title" content="Najma Chaudhary | Full-Stack Web Developer">
+    <meta property="og:description" content="MERN & Go specialist building scalable REST APIs and modern interfaces.">
+    <meta property="og:image" content="images/profile.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%23c3224f'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' font-style='italic' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.documentElement.classList.add('js');
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    </script>
+</head>
+<body>
+
+    <div class="progress" id="progress"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <a href="#home" class="brand" aria-label="Najma Chaudhary home">
+            <span class="brand-mark">N</span>
+            <span class="brand-text">najma<em>.dev</em></span>
+        </a>
+        <nav class="nav-links" id="nav-links" aria-label="Main">
+            <a href="#about"><span>01</span> About</a>
+            <a href="#skills"><span>02</span> Stack</a>
+            <a href="#projects"><span>03</span> Work</a>
+            <a href="#experience"><span>04</span> Journey</a>
+            <a href="#contact" class="nav-cta">Let's talk <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </nav>
+        <div class="nav-tools">
+            <button class="icon-btn" id="theme-toggle" aria-label="Toggle light / dark theme"><i class="fas fa-moon"></i></button>
+            <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow reveal"><i class="dot"></i> Available for full-stack opportunities</span>
+                <h1 class="reveal d1">
+                    <span class="h1-small">Hello, I'm</span>
+                    Najma <em>Chaudhary</em>
+                </h1>
+                <p class="role reveal d2">
+                    <span class="mono">&gt;</span>
+                    <span id="typed" class="typed">Full-Stack Developer</span><span class="caret"></span>
+                </p>
+                <p class="lead reveal d2">I design and build fast, scalable web apps &mdash; from clean React interfaces to REST APIs and microservices in Node.js &amp; Go.</p>
+                <div class="hero-actions reveal d3">
+                    <a href="#projects" class="btn btn-primary">View my work <i class="fas fa-arrow-down"></i></a>
+                    <a href="https://github.com/Najma-web-cell" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/najma-chaudhary-b76223407" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+                <div class="hero-meta reveal d3">
+                    <div><strong>7th</strong><span>Semester CS</span></div>
+                    <div><strong>3 mo</strong><span>Industry internship</span></div>
+                    <div><strong>20+</strong><span>Projects on GitHub</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal d2">
+                <div class="photo-wrap">
+                    <svg class="spin-text" viewBox="0 0 200 200" aria-hidden="true">
+                        <defs><path id="circ" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+                        <text><textPath href="#circ" startOffset="0" textLength="508" lengthAdjust="spacing">MERN • GO • POSTGRESQL • PRISMA • REACT • NODE.JS •</textPath></text>
+                    </svg>
+                    <div class="photo-arch">
+                        <img src="images/profile.jpg" alt="Portrait of Najma Chaudhary" width="435" height="435" fetchpriority="high">
+                    </div>
+                    <span class="chip chip-a"><i class="fab fa-react"></i> React</span>
+                    <span class="chip chip-b"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="chip chip-c"><i class="fas fa-database"></i> PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>JavaScript</span><i>✦</i><span>React.js</span><i>✦</i><span>Node.js</span><i>✦</i><span>Express</span><i>✦</i><span>Go</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Prisma</span><i>✦</i><span>Tailwind</span><i>✦</i>
+            <span>JavaScript</span><i>✦</i><span>React.js</span><i>✦</i><span>Node.js</span><i>✦</i><span>Express</span><i>✦</i><span>Go</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Prisma</span><i>✦</i><span>Tailwind</span><i>✦</i>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="sec-head reveal">
+            <span class="sec-no">01</span>
+            <h2>About <em>me</em></h2>
+        </div>
+        <div class="bento">
+            <article class="card bento-bio reveal">
+                <p class="big">Passionate about turning ideas into <em>reliable, beautiful</em> software.</p>
+                <p>I am a Full-Stack Web Developer in my 7th semester of Computer Science at the <b>University of Wah</b>. With hands-on industry experience from my 3-month Summer Internship at <b>CapregSoft (Pvt) Ltd</b>, I specialize in building scalable REST APIs, microservices, and modern user interfaces using React, Node.js, Express, Go, and PostgreSQL with Prisma ORM.</p>
+            </article>
+            <article class="card bento-stat reveal d1">
+                <i class="fas fa-graduation-cap"></i>
+                <strong>CS</strong>
+                <span>University of Wah<br>7th Semester</span>
+            </article>
+            <article class="card bento-stat accent reveal d2">
+                <i class="fas fa-briefcase"></i>
+                <strong>Intern</strong>
+                <span>CapregSoft (Pvt) Ltd<br>Full-Stack Developer</span>
+            </article>
+            <article class="card bento-links reveal d1">
+                <span class="mono small-label">Find me on</span>
+                <a href="https://github.com/Najma-web-cell" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub <i class="fas fa-arrow-right"></i></a>
+                <a href="https://www.linkedin.com/in/najma-chaudhary-b76223407" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn <i class="fas fa-arrow-right"></i></a>
+                <a href="https://www.fiverr.com/najma_web_cell" target="_blank" rel="noopener"><i class="fas fa-briefcase"></i> Fiverr <i class="fas fa-arrow-right"></i></a>
+            </article>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="sec-head reveal">
+            <span class="sec-no">02</span>
+            <h2>Tech <em>stack</em> &amp; tools</h2>
+        </div>
+        <div class="skills">
+            <div class="skill reveal"><i class="fab fa-js-square" style="--c:#f7df1e"></i><b>JavaScript</b><small>Language</small></div>
+            <div class="skill reveal d1"><i class="fab fa-react" style="--c:#61dafb"></i><b>React.js</b><small>Frontend</small></div>
+            <div class="skill reveal d2"><i class="fab fa-node-js" style="--c:#68a063"></i><b>Node.js</b><small>Runtime</small></div>
+            <div class="skill reveal d3"><i class="fas fa-server" style="--c:#b8b8c0"></i><b>Express.js</b><small>Backend</small></div>
+            <div class="skill reveal"><i class="fas fa-code" style="--c:#00add8"></i><b>Go (Golang)</b><small>Backend</small></div>
+            <div class="skill reveal d1"><i class="fas fa-database" style="--c:#4f8ac9"></i><b>PostgreSQL</b><small>Database</small></div>
+            <div class="skill reveal d2"><i class="fas fa-layer-group" style="--c:#5a67d8"></i><b>Prisma ORM</b><small>Data layer</small></div>
+            <div class="skill reveal d3"><i class="fab fa-css3-alt" style="--c:#38bdf8"></i><b>Tailwind CSS</b><small>Styling</small></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-wide">
+        <div class="sec-head reveal">
+            <span class="sec-no">03</span>
+            <h2>Featured <em>projects</em></h2>
+            <p class="sec-sub">Tap or click any screenshot to view it full-screen.</p>
+        </div>
+
+        <article class="project reveal">
+            <button class="shot" data-index="0" aria-label="View SaaS Landing Page full screen">
+                <span class="shot-bar"><i></i><i></i><i></i><em>saas-landing</em><b><i class="fas fa-expand"></i></b></span>
+                <img src="images/saas-landing.png" alt="SaaS Landing Page screenshot" width="1773" height="874" loading="lazy">
+            </button>
+            <div class="project-info">
+                <span class="p-no">01</span>
+                <div class="p-main">
+                    <h3>SaaS Landing Page</h3>
+                    <p>A modern, high-converting software company landing page with responsive sections for Hero, Features, Testimonials, and Pricing.</p>
+                </div>
+                <div class="p-side">
+                    <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    <a class="p-link" href="https://github.com/Najma-web-cell/SaaS-Landing-Page" target="_blank" rel="noopener">View repository <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project reveal">
+            <button class="shot" data-index="1" aria-label="View Inventory Management full screen">
+                <span class="shot-bar"><i></i><i></i><i></i><em>inventory-management</em><b><i class="fas fa-expand"></i></b></span>
+                <img src="images/Inventory-Management.png" alt="Inventory Management dashboard screenshot" width="1357" height="640" loading="lazy">
+            </button>
+            <div class="project-info">
+                <span class="p-no">02</span>
+                <div class="p-main">
+                    <h3>Inventory Management</h3>
+                    <p>Advanced backend inventory management system built with Node.js and PostgreSQL for real-time stock analytics, tracking, and order automation.</p>
+                </div>
+                <div class="p-side">
+                    <div class="tags"><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span></div>
+                    <a class="p-link" href="https://github.com/Najma-web-cell/Inventory-Management" target="_blank" rel="noopener">View repository <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project reveal">
+            <button class="shot" data-index="2" aria-label="View Product Filtering System full screen">
+                <span class="shot-bar"><i></i><i></i><i></i><em>product-filter</em><b><i class="fas fa-expand"></i></b></span>
+                <img src="images/product-filter.png" alt="Product Filtering System screenshot" width="1354" height="885" loading="lazy">
+            </button>
+            <div class="project-info">
+                <span class="p-no">03</span>
+                <div class="p-main">
+                    <h3>Product Filtering System</h3>
+                    <p>Clean and interactive catalog system fetching dynamic JSON data featuring instant search input, category filtering, and price sorting.</p>
+                </div>
+                <div class="p-side">
+                    <div class="tags"><span>Async JS</span><span>JSON</span><span>UI/UX</span></div>
+                    <a class="p-link" href="https://github.com/Najma-web-cell/product-filtering-system" target="_blank" rel="noopener">View repository <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project reveal">
+            <button class="shot" data-index="3" aria-label="View Admin Dashboard full screen">
+                <span class="shot-bar"><i></i><i></i><i></i><em>admin-dashboard</em><b><i class="fas fa-expand"></i></b></span>
+                <img src="images/admin-dashboard.png" alt="Admin Management Dashboard screenshot" width="1855" height="882" loading="lazy">
+            </button>
+            <div class="project-info">
+                <span class="p-no">04</span>
+                <div class="p-main">
+                    <h3>Admin Management Dashboard</h3>
+                    <p>Real-world administrative interface built for tracking metrics, managing users, and streamlining system workflows.</p>
+                </div>
+                <div class="p-side">
+                    <div class="tags"><span>Full Stack</span><span>Dashboard UI</span><span>JavaScript</span></div>
+                    <a class="p-link" href="https://github.com/Najma-web-cell/admin-dashboard" target="_blank" rel="noopener">View repository <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <div class="more-projects reveal">
+            <p>These are my featured projects &mdash; there are <b>20+</b> more on GitHub.</p>
+            <a href="https://github.com/Najma-web-cell?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-github"></i> Explore all repositories <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="sec-head reveal">
+            <span class="sec-no">04</span>
+            <h2>Professional <em>journey</em></h2>
+        </div>
+        <div class="timeline">
+            <article class="card tl-item reveal">
+                <span class="tl-dot"></span>
+                <div class="tl-head">
+                    <div>
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>CapregSoft (Pvt) Ltd</h4>
+                    </div>
+                    <span class="date"><i class="far fa-calendar-alt"></i> July 2026 – October 2026</span>
+                </div>
+                <ul>
+                    <li>Engineered scalable full-stack web applications using React.js, Node.js, Express, Go, and PostgreSQL.</li>
+                    <li>Implemented secure JWT authentication workflows, structured database schemas with Prisma ORM, and built robust REST APIs.</li>
+                    <li>Developed real-time communication modules and responsive, modern interfaces using Tailwind CSS.</li>
+                </ul>
+            </article>
+            <article class="card tl-item reveal d1">
+                <span class="tl-dot alt"></span>
+                <div class="tl-head">
+                    <div>
+                        <h3>Computer Science</h3>
+                        <h4>University of Wah</h4>
+                    </div>
+                    <span class="date"><i class="fas fa-user-graduate"></i> Currently 7th Semester</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    </main>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="contact">
+        <div class="contact-inner reveal">
+            <span class="mono small-label">// what's next?</span>
+            <h2>Let's build something <em>extraordinary</em> together.</h2>
+            <p>Reach out for projects, collaborations, or career opportunities.</p>
+            <div class="contact-actions">
+                <a href="https://www.linkedin.com/in/najma-chaudhary-b76223407" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-linkedin-in"></i> Message on LinkedIn</a>
+                <a href="https://www.fiverr.com/najma_web_cell" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fas fa-briefcase"></i> Hire on Fiverr</a>
+                <a href="https://github.com/Najma-web-cell" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="foot-bar">
+            <span>&copy; 2026 Najma Chaudhary</span>
+            <a href="#home">Back to top <i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Project screenshot">
+        <div class="lb-top">
+            <span id="lb-title"></span>
+            <div class="lb-btns">
+                <span id="lb-count" class="mono"></span>
+                <button id="lb-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+            </div>
+        </div>
+        <button class="lb-nav prev" id="lb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""></div>
+        <button class="lb-nav next" id="lb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
